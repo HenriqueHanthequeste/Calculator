@@ -21,3 +21,5 @@ const Light = {
     white: '#FFFFFF',
     dark: '#565B6A',
  }
+
+ export default Themes;
