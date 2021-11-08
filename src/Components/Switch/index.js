@@ -4,8 +4,8 @@ import { Animated, TouchableWithoutFeedback } from 'react-native';
 import {
     Container,
     ButtonSwitch,
-    Sun,
-    Moon
+    IconSun,
+    IconMoon
 } from './styled';
 
 export default function Switch({onPress}){
@@ -18,7 +18,7 @@ export default function Switch({onPress}){
             dynamicRight,
             {
                 toValue: inDarkMode ? 10 : 55,
-                duration: 200,
+                duration: 250,
                 useNativeDriver: false
             }
         ).start()
@@ -29,8 +29,8 @@ export default function Switch({onPress}){
         <TouchableWithoutFeedback onPress={() => {handleClick()}}>
             <Container >
                 <ButtonSwitch style={{right: dynamicRight}}/>
-                <Sun name="sun" size={24}/>
-                <Moon name="moon" size={24}/>
+                <IconSun name="sun" size={24}/>
+                <IconMoon name="moon" size={24}/>
             </Container>
         </TouchableWithoutFeedback>
     );

@@ -3,11 +3,9 @@ import { Animated } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
 export const Container = styled.View`
-    
     width: 110px;
     height: 45px;
     padding: 0px 20px 0px 20px;
-    margin-top: 30px;
     border-radius: 50px;
     align-self: center;
 
@@ -29,10 +27,10 @@ export const ButtonSwitch = styled(Animated.View)`
     background-color: ${props => props.theme.white};
 
 `
-export const Sun = styled(Feather)`
+export const IconSun = styled(Feather)`
     color: ${props => props.theme.mainbg === '#EEFAF4' ? '#1BC47D' : '#828282'};
 `
 
-export const Moon = styled(Feather)`
+export const IconMoon = styled(Feather)`
     color: ${props => props.theme.mainbg === '#212226' ? '#1BC47D' : '#828282'};
 `
