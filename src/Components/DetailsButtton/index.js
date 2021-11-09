@@ -7,9 +7,9 @@ import {
     IconInformation,
  } from './styles';
 
-export default function DetailsButton(){
+export default function DetailsButton({onPress}){
     return (
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {onPress()}}>
             <Container>
                 <IconInformation name="information-circle-outline" size={26} />
             </Container>
