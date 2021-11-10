@@ -7,6 +7,7 @@ import Switch from '../../Components/Switch';
 import DetailsButton from '../../Components/DetailsButtton';
 import InfoModal from '../../Components/InfoModal';
 import ButtonCalc from '../../Components/ButtonCalc';
+import NumberButton from '../../Components/NumberButton';
 
 import { 
     Container,
@@ -14,7 +15,10 @@ import {
     FormContainer,
     SuperiorOperatorsContainer,
     SideOperatorsContainer,
-    ACText
+    ACText,
+    NumbersContainer,
+    EraseIcon,
+    IconContainer
  } from './styles'
 
 export default function Home({changeTheme}){
@@ -42,14 +46,35 @@ export default function Home({changeTheme}){
             />
 
             <FormContainer>
-                <SuperiorOperatorsContainer>
-                    <TouchableOpacity>
-                        <ACText>AC</ACText>
-                    </TouchableOpacity>
-                    
-                    <ButtonCalc name="plus-minus" size={28}/>
-                    <ButtonCalc name="percent-outline" size={28}/>
-                </SuperiorOperatorsContainer>
+                <View>
+                    <SuperiorOperatorsContainer>
+                        <TouchableOpacity>
+                            <ACText>AC</ACText>
+                        </TouchableOpacity>
+                        
+                        <ButtonCalc name="plus-minus" size={28}/>
+                        <ButtonCalc name="percent-outline" size={28}/>
+                    </SuperiorOperatorsContainer>
+
+                    <NumbersContainer>
+                        <NumberButton>7</NumberButton>
+                        <NumberButton>4</NumberButton>
+                        <NumberButton>1</NumberButton>
+                        <IconContainer>
+                            <EraseIcon name="md-backspace-outline" size={30}/>
+                        </IconContainer>
+                        <NumberButton>8</NumberButton>
+                        <NumberButton>5</NumberButton>
+                        <NumberButton>2</NumberButton>
+                        <NumberButton>0</NumberButton>
+                        <NumberButton>9</NumberButton>
+                        <NumberButton>6</NumberButton>
+                        <NumberButton>3</NumberButton>
+                        <NumberButton>.</NumberButton>
+
+
+                    </NumbersContainer>
+                </View>
 
                 <View>
                     <SideOperatorsContainer>

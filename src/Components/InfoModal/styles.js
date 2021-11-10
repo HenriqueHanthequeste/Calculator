@@ -76,5 +76,6 @@ export const CloseButton = styled.TouchableOpacity`
 `;
 
 export const CloseIcon = styled(Ionicons)`
+    width: 30px;
     color: ${props => props.theme.white};
 `

@@ -1,4 +1,6 @@
 import styled from 'styled-components/native'
+import { Ionicons } from '@expo/vector-icons';
+
 
 export const Container = styled.View`
     flex: 1;
@@ -65,4 +67,28 @@ export const ACText = styled.Text`
     font-size: 20px;
 
     color: ${props => props.theme.green};
+`;
+
+export const NumbersContainer =  styled.View`
+    width: 250px;
+    height: 240px;
+
+    align-content: space-between;
+    justify-content:space-between;
+
+    margin-left: 35px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+`
+
+export const IconContainer = styled.TouchableOpacity`
+    width: 55px;
+    height: 55px;
+
+    align-items: center;
+    justify-content: center;
+`
+
+export const EraseIcon = styled(Ionicons)`
+    color: ${props => props.theme.red}
 `;
