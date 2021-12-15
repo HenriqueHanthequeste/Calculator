@@ -6,10 +6,10 @@ import {
     TextButton
 } from './styles'
 
-export default function NumberButton({children}){
+export default function NumberButton({children, onPress}){
 
     return (
-        <ButtonContainer>
+        <ButtonContainer onPress={() => {onPress()}}>
             <TextButton>{children}</TextButton>
         </ButtonContainer>
     );

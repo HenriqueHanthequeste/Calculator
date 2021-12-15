@@ -1,5 +1,5 @@
 import styled from 'styled-components/native'
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, FontAwesome5 } from '@expo/vector-icons';
 
 
 export const Container = styled.View`
@@ -19,7 +19,7 @@ export const Header = styled.View`
 `;
 
 export const FormContainer = styled.View`
-    height: 50%;
+    height: 52%;
     width: 100%;
 
     border-top-left-radius: 25px;
@@ -27,23 +27,20 @@ export const FormContainer = styled.View`
 
     flex-direction: row;
 
-    position: absolute;
-    bottom: 0;
-
     background-color: ${props => props.theme.formbg};
 `
 
 export const SuperiorOperatorsContainer = styled.View`
     height: 45px;
-    width: 250px;
+    width: 260px;
     border-radius: 50px;
 
-    padding-top: 7px;
+    padding: 7px 20px 0px 20px;
     margin-top: 40px;
-    margin-left: 35px;
+    margin-left: 25px;
 
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 
     background-color: ${props => props.theme.buttonsbg};
 `;
@@ -69,6 +66,7 @@ export const ACText = styled.Text`
     color: ${props => props.theme.green};
 `;
 
+
 export const NumbersContainer =  styled.View`
     width: 250px;
     height: 240px;
@@ -82,13 +80,48 @@ export const NumbersContainer =  styled.View`
 `
 
 export const IconContainer = styled.TouchableOpacity`
-    width: 55px;
-    height: 55px;
-
-    align-items: center;
-    justify-content: center;
+    
 `
 
 export const EraseIcon = styled(Ionicons)`
-    color: ${props => props.theme.red}
+    color: ${props => props.theme.red};
 `;
+
+export const MathResultContainer = styled.View`
+    width: 100%;
+    height: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+`;
+
+export const ResultText = styled.Text`
+    color: ${props => props.theme.dark};
+    font-size:48px;
+`;
+
+export const EqualsIcon = styled(FontAwesome5)`
+    color: ${props => props.theme.dark};
+
+    margin-right: 10px;
+`
+
+export const ExpressionContainer = styled.View`
+    width: 100%;
+    height: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    align-items: flex-end;
+    justify-content: center;
+    
+`
+
+export const ExpressionText = styled.Text`
+    font-size: 22px;
+    color: ${props => props.theme.dark};
+
+`
